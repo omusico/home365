@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^article/([1-9][0-9]*)/?$ blog_info.php?blog_id=$1 [NC,L,PT,QSA]
+RewriteRule ^article/([1-9][0-9]*)/t([1-9]*)?$ blog_info.php?blog_id=$1&app=$2 [NC,L,PT,QSA]
+Options All -Indexes
+DirectoryIndex index.html
