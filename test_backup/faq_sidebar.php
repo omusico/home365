@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>RealEstast</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="">
+
+  <meta name="author" content="">
+
+  <!-- Your styles -->
+
+  <link href="../test1/css/bootstrap.css" rel="stylesheet" media="screen">
+
+  <link href="../test1/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+
+  <link href="../test1/css/flexslider/flexslider.css" rel="stylesheet" media="screen">
+
+  <link href="../test1/css/tabber/tabber.css" rel="stylesheet" media="screen">
+
+  <link href="../test1/css/iconmoon/iconfont.css" rel="stylesheet" media="screen">
+
+  <link href="../site/css/styles.css" rel="stylesheet" media="screen">
+
+  <link href="../test1/css/responsive.css" rel="stylesheet" media="screen">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,100,200,300' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 shim, for Ie6-8 support of HTML5 elements -->
+
+    <!--[if lt Ie 9]>
+
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- BEGIN HEADER -->
+
+    <header>
+
+      <?php require_once'../test1/html/header.php'?>
+
+     <!-- Banner -->
+
+     <div class="row-fluid">
+
+      <div class="span12">
+
+        <section class="pic-cat">
+
+          <img width="1900" height="200" alt="" src="../site/img/imgdemo/1900x200.gif">
+          <div class="container">
+            <div class="brc">
+              <h3>Fag</h3>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+    <!-- Banner -->
+
+
+
+  </header>
+
+  <!-- END HEADER -->
+
+
+
+  <!-- BEGIN CONTENT -->
+
+  <div class="main-content">
+
+    <div class="properties">
+
+      <div class="container">
+
+        <div class="grid_full_width">
+
+          <div class="row">
+
+           <!-- Content main -->
+
+           <div class="span8">
+
+             <!-- FAG List -->
+
+             <div class="fag">
+              <h3>FAQ Page</h3>
+              <p class="text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
+              <div class="showhidefag">
+
+                <ul>
+                  <li>
+
+                    <span class="btshowhide" id="fag1" rel="1">Praesent tellus justo, euismod sed iaculis vel, fringilla vel sapien. Praesent sed mi neque</span>
+                    <div class="fagtext class1">
+                      Donec risus nulla, fringilla a rhoncus vitae, semper a massa. Vivamus ullamcorper, enim sit amet consequat laoreet, tortor tortor dictum urna, ut egestas urna ipsum nec libero. 
+                    </div>
+
+
+                  </li>
+                  <li>
+                    <span class="btshowhide" id="fag2" rel="2"> Praesent tellus justo, euismod sed iaculis vel, fringilla vel sapien. Praesent sed mi neque </span>
+                    <div class="fagtext class2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="btshowhide" id="fag3" rel="3"> Praesent tellus justo, euismod sed iaculis vel, fringilla vel sapien. Praesent sed mi neque </span>
+                    <div class="fagtext class3">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="btshowhide" id="fag4" rel="4"> Praesent tellus justo, euismod sed iaculis vel, fringilla vel sapien. Praesent sed mi neque </span>
+                    <div class="fagtext class4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="btshowhide" id="fag5" rel="5"> Praesent tellus justo, euismod sed iaculis vel, fringilla vel sapien. Praesent sed mi neque </span>
+                    <div class="fagtext class5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati architecto sequi nisi fuga rerum quam cum reprehenderit distinctio doloremque iste officia deleniti nostrum ducimus aliquid sed provident doloribus animi.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- End FAG List -->
+
+
+
+          </div>
+
+          <!-- End Content main -->
+
+
+
+          <!-- Sidebar left  -->
+
+          <div class="span4">
+
+            <div class="box-siderbar-container">
+
+              <!-- sidebar-box formsearchwg -->
+
+              <div class="sidebar-box formsearchwg">
+
+
+                <div class="keysearch">
+                  <form>
+                    <input type="text" placeholder="Keyword for search" class="finput">
+                    <button type="submit" class="fsubmit"><span class="icon-search-font" aria-hidden="true"></span></button>
+                  </form>
+                </div>
+
+              </div>
+
+              <!-- End sidebar-box formsearchwg -->
+
+
+
+              <!-- sidebar-box tabsidebar -->
+
+              <div class="sidebar-box tabsidebar">
+
+                <div class="tabber">
+
+                  <div class="tabbertab">
+
+                    <h2>Popular</h2>
+
+                    <ul class="fag_list_wg">
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                  <div class="tabbertab">
+
+                    <h2>Recent</h2>
+
+                    <ul class="fag_list_wg">
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                      <li>
+
+                        <div class="clearfix">
+
+                          <a title="" href="#">
+
+                            <img width="60" height="60" alt="" class="thumbnail_pic" src="../site/img/imgdemo/60x60.gif">
+
+                            Vivamus laoreet posuere 
+                            lacinia. 
+
+                          </a> 
+
+                          <div class="date">May 15, 2013</div>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- End Sidebar-box tabsidebar -->
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+          <!-- End Sidebar left  -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- END CONTENT -->
+
+
+
+<!-- BEGIN FOOTER -->
+
+<footer>
+
+  <div class="footer-container">
+
+    <div class="container">
+
+      <!-- Footer box -->
+
+      <div class="footer-top">
+
+        <div class="row">
+
+          <div class="span4">
+
+            <h3>contact detail</h3>
+
+            <p>Pellentesque nec erat. Aenean semper, neque non faucibus. Malesuada, dui felis tempor felis, vel varius ante diam ut mauris. </p>
+
+            <p><span>Phone. 012.666.999 </span><br/><span>Fax. 012.666.999 </span><br/><span>Mail. <a href="mailto:someone@example.com?Subject=Hello%20again">Pixelgeeklab@gmail.com</a>  </span><br/></p>
+
+          </div>
+
+          <div class="span4">
+
+            <h3>Useful links</h3>
+
+            <ul>
+
+              <li><a href="#" title="">Help and FAQs</a></li>
+
+              <li><a href="#" title="">Home Price</a></li>
+
+              <li><a href="#" title="">Market View</a></li>
+
+              <li><a href="#" title="">Free Credit Report</a></li>
+
+              <li><a href="#" title="">Terms and Conditions</a></li>
+
+              <li><a href="#" title="">Privacy Policy</a></li>
+
+              <li><a href="#" title="">Community Guidelines</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="span4">
+
+            <h3>don’t miss out</h3>
+
+            <p>In venenatis neque a eros laoreet eu placerat erat suscipit. Fusce cursus, erat ut scelerisque condimentum, quam odio ultrices leo.</p>
+
+            <div class="newletter">
+
+              <form>
+
+                <input type="text" class="textnewletter" placeholder="Enter your email here…">
+
+                <button type="submit" class="buttonnewletter">Submit</button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- End Footer box -->
+
+
+
+      <div class="footer-bottom">
+
+        <div class="row">
+
+          <div class="span6">
+
+            <p>Copyright © 2013 PGL RealEstast. Designed by <a href="#" title="">PixelGeekLab</a><br/>All rights reserved.</p>
+
+          </div>
+
+          <div class="span6">
+
+            <div class="social pull-right">
+
+              <ul>
+
+                <li><a class="facebook" title="" href="#"> Facebook </a></li>
+
+                <li><a class="twitter" title="" href="#"> twitter </a></li>
+
+                <li><a class="googplus" title="" href="#"> googplus </a></li>
+
+                <li><a class="pinterest" title="" href="#"> pinterest </a></li>
+
+                <li><a class="email" title="" href="#"> Email </a></li>
+
+                <li><a class="feed" title="" href="#"> Feed </a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<div id='bttop'>BACK TO TOP</div>
+
+<!-- End Footer -->
+
+<!-- Always latest version of jQuery-->
+
+<script src="../test1/js/jquery-1.8.3.min.js"></script>
+
+<script src="../test1/js/bootstrap.min.js"></script>
+
+<!-- Some scripts that are used in almost every page -->
+
+<script src="../test1/js/tinynav/tinynav.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../test1/js/tabber/tabber.js"></script>
+
+
+<!-- Load template main javascript file -->
+
+<script type="text/javascript" src="../test1/js/main.js"></script>
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+jQuery(function(){
+  $('.fagtext').hide();
+  jQuery('.btshowhide').click(function(e){
+    e.preventDefault();
+    var target = jQuery('.class' + jQuery(this).attr('rel'));
+    jQuery('.fagtext').not(target).hide();
+    target.show();
+    jQuery('.btshowhide').not(this).removeClass("active");
+    jQuery(this).addClass("active");
+  })
+});
+
+
+
+/* ]]> */
+
+</script>
+
+</body>
+
+</html>
+
+
+

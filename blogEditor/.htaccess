@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "blogEditor"
+AuthUserFile "/home/home365/.htpasswds/public_html/blogEditor/passwd"
+require valid-user
+
+RewriteRule ^/([1-9][0-9]*)/?$ index.php?&blog_id=$1 [NC,L,PT,QSA]

@@ -1,0 +1,539 @@
+<?php 
+$document_root='/home/home365/public_html';
+require_once $document_root.'/dbconnect/dbconnect.php';
+require_once $document_root.'/utilities/utilities.php';
+if(mysql_select_db("home365_ios",$useradmin)){
+}else{
+	echo "Error selecting database, exited.";
+	exit();
+}
+$sysid=isset($_GET['sysid'])?$_GET['sysid']:$_POST['sysid'];
+if(!empty($sysid)){
+	$selectSQL = "SELECT * FROM listings WHERE publish_on_internet='Y' AND status='A' AND sysid=".$sysid;
+	$get_property=mysql_query_or_die($selectSQL, $useradmin);
+	$propertyObject=array();
+	if($propertyObject=mysql_fetch_assoc($get_property)){
+		
+	}
+	else{
+	}
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RealEstast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Your styles -->
+  <link href="../test1/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="../test1/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="../test1/css/flexslider/flexslider.css" rel="stylesheet" media="screen">
+  <link href="../test1/css/tabber/tabber.css" rel="stylesheet" media="screen">
+  <link href="../test1/css/colorbox/colorbox.css" rel="stylesheet" media="screen">
+  <link href="../site/css/styles.css" rel="stylesheet" media="screen">
+  <link href="../test1/css/responsive.css" rel="stylesheet" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,100,200,300' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim, for Ie6-8 support of HTML5 elements -->
+    <!--[if lt Ie 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- BEGIN HEADER -->
+    <header>
+    <?php require_once'../test1/html/header.php'; ?>
+   <!-- Bannber -->
+   <div class="row-fluid">
+    <div class="span12">
+      <section class="pic-cat">
+        <img width="1900" height="200" alt="" src="../site/img/imgdemo/1900x200.gif">
+      </section>
+    </div>
+  </div>
+  <!-- Banner -->
+</header>
+<!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<div class="main-content">
+  <div class="properties">
+    <div class="container">
+      <div class="grid_full_width gird_sidebar">
+        <div class="row">
+         
+         <!-- Main content -->
+         <div class="span8">
+           <!-- Property detail -->
+           <div class="property_detail">
+            <section class="slider-detail">
+              <div id="pic-detail" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                  <li>
+                    <a class="detailbox" href="../site/img/imgdemo/620x388.gif" title="1524A consectetur purus sit amet fermentum."><img alt=""  width="620" height="388" src="../site/img/imgdemo/620x388.gif" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="pic-control" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                  <li>
+                    <img alt="" src="../site/img/imgdemo/620x388.gif" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <div class="infotext-detail">
+              <h3><?php echo $propertyObject['address'];?></h3>
+              <span class="price">$<?php echo number_format($propertyObject['list_price']);?></span>
+              <div class="row">
+                <div class="span260px">
+                  <ul class="title-info">
+                    <li>Bathrooms <span> <?php echo $propertyObject['bathrooms'];?></span> </li>
+                    <li>Bathrooms <span> <?php echo $propertyObject['bedrooms'];?></span></li>
+                    <li>Square Footage <span><?php echo $propertyObject['floor_area_total'];?></span></li>
+                    <li>Type: <span><?php echo $propertyObject['type_of_dwelling'];?></span></li>
+                  </ul>
+                </div>
+                <div class="span260px pull-right">
+                  <ul class="title-info">
+                    <li>Year <span> <?php echo $propertyObject['built_year'];?></span> </li>
+                    <li> Car Garage <span> 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="excerpt">
+                <?php echo $propertyObject['public_remarks'];?>
+              </div>
+              <div class="share">
+                <ul>
+                  <li><a href="#"><img alt=""  src="../site/img/icon/pinshare.jpg"></a></li>
+                  <li><a href="#"><img alt=""  src="../site/img/icon/twittershare.jpg"></a></li>
+                  <li><a href="#"><img alt=""  src="../site/img/icon/faceshare.jpg"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Property -->
+        </div>
+        <!-- End Main content -->  
+        
+        
+        <!-- Sidebar left  -->
+        <div class="span4">
+          <div class="box-siderbar-container">
+            <!-- sidebar-box map-box -->
+            <div class="sidebar-box map-box">
+              <h3>Map & Directions</h3>
+              <iframe width="260" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=34.669359,-95.712891&amp;spn=40.915036,86.572266&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+            </div>
+            <!-- End sidebar-box map-box -->
+            
+            <!-- sidebar-box our-box -->
+            <div class="sidebar-box our-box">
+              <h3>our agents</h3>
+              <ul>
+                <li>
+                  <div class="our-border clearfix">
+                    <div class="our-img"><img alt="" height="90" width="90" src="../site/img/imgdemo/90x90.gif"></div>
+                    <div class="our-info">
+                      <h4>No.1</h4>
+                      <h5>John Smith</h5>
+                      <span>Call. </span>012.666.999 <br/>
+                      <span>Mail. </span><a href="mailto:someone@example.com?Subject=Hello%20again">JohnSmith@gmail.com</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- End sidebar-box our-box -->
+            
+            
+            <!-- sidebar-box product_list_wg -->
+            <div class="sidebar-box">
+              <h3>Related Properties</h3>
+              <ul class="product_list_wg">
+                <li>
+                  <div class="clearfix">
+                    <a title="" href="#">
+                      <img width="90" height="54" alt="" class="thumbnail_pic" src="../site/img/imgdemo/90x54.gif">
+                      1076 Nelson Walk
+                    </a> 
+                    <div class="amount">$1,550</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="clearfix">
+                    <a title="" href="#">
+                      <img width="90" height="54" alt="" class="thumbnail_pic" src="../site/img/imgdemo/90x54.gif">
+                      1076 Nelson Walk
+                    </a> 
+                    <div class="amount">$1,550</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="clearfix">
+                    <a title="" href="#">
+                      <img width="90" height="54" alt="" class="thumbnail_pic" src="../site/img/imgdemo/90x54.gif">
+                      1076 Nelson Walk
+                    </a> 
+                    <div class="amount">$1,550</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- End sidebar-box product_list_wg -->
+            
+            <!-- sidebar-box searchbox -->
+            <div class="sidebar-box searchbox">
+              <div class="row-fluid">
+                <div class="span12">
+                  <div class="find">
+                    <div class="tabber">
+                      <div class="tabbertab">
+                        <h2>for sale</h2>
+                        <form>
+                          <div class="span12">
+                            <input type="text" class="keywordfind" placeholder="Keyword for find Property…">
+                          </div>
+                          <div class="span12">
+                            <div class="row-fluid">
+                              <div class="span6">
+                                <select>
+                                  <option>Min Price</option>
+                                  <option>$25.000</option>
+                                  <option>$50.000</option>
+                                  <option>$75.000</option>
+                                  <option>$100.000</option>
+                                  <option>$150.000</option>
+                                  <option>$200.000</option>
+                                  <option>$300.000</option>
+                                  <option>$400.000</option>
+                                  <option>$500.000</option>
+                                  <option>$750.000</option>
+                                </select>
+                              </div>
+                              <div class="span6">
+                                <select>
+                                  <option>Max Price</option>
+                                  <option>$50.000</option>
+                                  <option>$75.000</option>
+                                  <option>$100.000</option>
+                                  <option>$150.000</option>
+                                  <option>$200.000</option>
+                                  <option>$300.000</option>
+                                  <option>$400.000</option>
+                                  <option>$500.000</option>
+                                  <option>$750.000</option>
+                                  <option>$1000.000</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="span12">
+                            <div class="row-fluid">
+                              <div class="span6">
+                                <select>
+                                  <option>Bedrooms</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4+</option>
+                                </select>
+                              </div>
+                              <div class="span6">
+                                <select>
+                                  <option>Bathrooms</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4+</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="span12">
+                            <label>
+                              <select>
+                                <option>Property Type</option>
+                                <option>Apartment</option>
+                                <option>Condo</option>
+                                <option>Multi Family</option>
+                                <option>Other</option>
+                                <option>Single Family</option>
+                                <option>Villa</option>
+                              </select>
+                            </label>
+                            <label>	
+                              <button class="search" type="button">Search</button>
+                            </label>	
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tabbertab">
+                        <h2>for rent</h2>
+                        <form>
+                          <div class="span12">
+                            <input type="text" class="keywordfind" placeholder="Keyword for find Property…">
+                          </div>
+                          <div class="span12">
+                            <div class="row-fluid">
+                              <div class="span6">
+                                <select>
+                                  <option>Min Price</option>
+                                  <option>$ 1000</option>
+                                  <option>$ 2000</option>
+                                  <option>$ 3000</option>
+                                  <option>Other</option>
+                                </select>
+                              </div>
+                              <div class="span6">
+                                <select>
+                                  <option>Max Price</option>
+                                  <option>$ 100000</option>
+                                  <option>$ 300000</option>
+                                  <option>$ 3000000</option>
+                                  <option>Other</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="span12">
+                            <div class="row-fluid">
+                              <div class="span6">
+                                <select>
+                                  <option>Bedrooms</option>
+                                  <option>Bedrooms</option>
+                                  <option>Bedrooms</option>
+                                  <option>Bedrooms</option>
+                                  <option>Bedrooms</option>
+                                </select>
+                              </div>
+                              <div class="span6">
+                                <select>
+                                  <option>Bathrooms</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="span12">
+                            <label>
+                              <select>
+                                <option>Property Type</option>
+                                <option>Apartment</option>
+                                <option>Condo</option>
+                                <option>Multi Family</option>
+                                <option>Other</option>
+                                <option>Single Family</option>
+                                <option>Villa</option>
+                              </select>
+                            </label>
+                            <label>	
+                              <button class="search" type="button">Search</button>
+                            </label>	
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End sidebar-box searchbox -->
+            
+          </div>
+        </div>
+        <!-- End Sidebar left  -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="container">
+      <!-- Footer box -->
+      <div class="footer-top">
+        <div class="row">
+          <div class="span4">
+            <h3>contact detail</h3>
+            <p>Pellentesque nec erat. Aenean semper, neque non faucibus. Malesuada, dui felis tempor felis, vel varius ante diam ut mauris. </p>
+            <p><span>Phone. 012.666.999 </span><br/><span>Fax. 012.666.999 </span><br/><span>Mail. <a href="mailto:someone@example.com?Subject=Hello%20again">Pixelgeeklab@gmail.com</a>  </span><br/></p>
+          </div>
+          <div class="span4">
+            <h3>Useful links</h3>
+            <ul>
+              <li><a href="#" title="">Help and FAQs</a></li>
+              <li><a href="#" title="">Home Price</a></li>
+              <li><a href="#" title="">Market View</a></li>
+              <li><a href="#" title="">Free Credit Report</a></li>
+              <li><a href="#" title="">Terms and Conditions</a></li>
+              <li><a href="#" title="">Privacy Policy</a></li>
+              <li><a href="#" title="">Community Guidelines</a></li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h3>don’t miss out</h3>
+            <p>In venenatis neque a eros laoreet eu placerat erat suscipit. Fusce cursus, erat ut scelerisque condimentum, quam odio ultrices leo.</p>
+            <div class="newletter">
+              <form>
+                <input type="text" class="textnewletter" placeholder="Enter your email here…">
+                <button type="submit" class="buttonnewletter">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer box -->
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="span6">
+            <p>Copyright © 2013 PGL RealEstast. Designed by <a href="#" title="">PixelGeekLab</a><br/>All rights reserved.</p>
+          </div>
+          <div class="span6">
+            <div class="social pull-right">
+              <ul>
+                <li><a class="facebook" title="" href="#"> Facebook </a></li>
+                <li><a class="twitter" title="" href="#"> twitter </a></li>
+                <li><a class="googplus" title="" href="#"> googplus </a></li>
+                <li><a class="pinterest" title="" href="#"> pinterest </a></li>
+                <li><a class="email" title="" href="#"> Email </a></li>
+                <li><a class="feed" title="" href="#"> Feed </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+<div id='bttop'>BACK TO TOP</div>
+
+<!-- Always latest version of jQuery-->
+<script src="../test1/js/jquery-1.8.3.min.js"></script>
+<script src="../test1/js/bootstrap.min.js"></script>
+<!-- Some scripts that are used in almost every page -->
+<script src="../test1/js/tinynav/tinynav.js" type="text/javascript"></script>
+<script type="text/javascript" src="../test1/js/tabber/tabber.js"></script>
+<!-- Load template main javascript file -->
+<script type="text/javascript" src="../test1/js/main.js"></script>
+
+<!-- ===================================================== -->
+<!-- ================ Property-detail page only scripts ============ -->
+<script src="../test1/js/flexflider/jquery.flexslider-min.js"></script>
+<script src="../test1/js/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+jQuery(function($){
+  $('#pic-control').flexslider({
+    animation: "slide",
+    controlNav: false,
+
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 55,
+    itemMargin: 10,
+    maxItems: 7,
+    asNavFor: '#pic-detail'
+  });
+
+  $('#pic-detail').flexslider({
+    controlNav: false,
+    directionNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#pic-control",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+
+  $(".detailbox").colorbox({rel:'detailbox'});
+});
+/* ]]> */
+</script>
+</body>
+</html>
+
